@@ -1,37 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for development and testing of Facebook and WhatsApp APIs." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c6670;
+      --accent: #0b5fff;
+      --border: #e6e8eb;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+    header {
+      padding: 1rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      margin: 0 0 .25rem;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: .5rem;
+    }
+    h3 {
+      margin-top: 1.25rem;
+      font-size: 1.05rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 1.25rem; }
+    code {
+      background: #f6f8fa;
+      border: 1px solid var(--border);
+      padding: 0 .25rem;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: .95em;
+    }
+    .notice {
+      background: #f6faff;
+      border: 1px solid #dfe7ff;
+      padding: .75rem;
+      border-radius: 8px;
+      color: #0b2b6b;
+    }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .95rem;
+    }
+  </style>
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: <time datetime="2026-01-06">January 6, 2026</time></p>
+    </header>
 
-    <h1>Privacy Policy</h1>
-    
-    <p>This app is used for development and testing of **Facebook** and **WhatsApp APIs**.</p>
-    
-    <p>**User data** is processed only to enable webhook communication and automation.</p>
-    
-    <p>**No personal data** is sold or shared.</p>
-    
-    <p>Contact: <a href="mailto:dev@example.com">dev@example.com</a></p>
+    <section>
+      <div class="notice">
+        This app is used solely for the development and testing of Facebook and WhatsApp APIs. User data is processed only to enable webhook communication and automation. No personal data is sold or shared.
+      </div>
+    </section>
 
+    <section>
+      <h2>Scope</h2>
+      <p>
+        This Privacy Policy explains how we handle data when using our app for integrating and testing Facebook and WhatsApp APIs, including receiving and responding to webhook events and executing automation related to those events.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data we process</h2>
+      <p>
+        We process only the minimum data required to enable webhooks and automation. Depending on the configuration of Facebook/WhatsApp API integrations, this may include:
+      </p>
+      <ul>
+        <li><strong>Webhook event payloads:</strong> Message metadata, sender/recipient identifiers provided by the platform, timestamps, and event types.</li>
+        <li><strong>Automation inputs/outputs:</strong> Rules, templates, or triggers used to automate responses or actions.</li>
+        <li><strong>Technical logs:</strong> Request headers, endpoint paths, status codes, and error messages for debugging and reliability.</li>
+      </ul>
+      <p>
+        We do not intentionally collect sensitive categories of personal data. Any personal information contained within platform-provided payloads is processed only to fulfill the technical function of the integration.
+      </p>
+    </section>
+
+    <section>
+      <h2>How we use data</h2>
+      <ul>
+        <li><strong>Deliver functionality:</strong> Receive webhook events and execute corresponding automation.</li>
+        <li><strong>Maintain reliability:</strong> Monitor, debug, and improve integration stability and performance.</li>
+        <li><strong>Security:</strong> Detect misuse and protect the integrity of the integration.</li>
+      </ul>
+      <p>
+        We do not use processed data for marketing, profiling, or advertising. We do not sell personal data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Legal basis</h2>
+      <p>
+        Where applicable, we process data on the basis of legitimate interests to operate and test API integrations, or performance of a contract when integrations are configured to function as intended by the user or organization controlling the connected account.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data sharing</h2>
+      <p>
+        We do not share personal data with third parties for their own purposes. Limited sharing may occur with:
+      </p>
+      <ul>
+        <li><strong>Service providers:</strong> Infrastructure or tooling vendors acting as processors (e.g., hosting, logging, error monitoring) strictly to support the app’s operation.</li>
+        <li><strong>Platforms:</strong> Facebook/Meta and WhatsApp APIs as required for the integration’s normal functionality.</li>
+      </ul>
+      <p>
+        Any such sharing is restricted to operational needs and does not involve selling personal data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data retention</h2>
+      <p>
+        Webhook payloads and technical logs are retained only as long as necessary for development, testing, debugging, and ensuring reliability. When no longer needed, data is deleted or de-identified. You may request deletion as described below.
+      </p>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>
+        We use reasonable administrative, technical, and organizational measures to protect data, including access controls, secure transport (HTTPS), and restricted logging. No system can be guaranteed 100% secure, but we continuously work to reduce risk.
+      </p>
+    </section>
+
+    <section>
+      <h2>Your choices and rights</h2>
+      <ul>
+        <li><strong>Access or deletion:</strong> You may request access to, or deletion of, data processed through our app, subject to platform constraints.</li>
+        <li><strong>Configuration:</strong> You can modify or disable webhook and automation settings at the platform level to limit processing.</li>
+        <li><strong>Opt-out of non-essential logs:</strong> For testing, some logs are essential for reliability. Where feasible, we minimize logging and anonymize fields.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Children’s privacy</h2>
+      <p>
+        Our app is intended for technical development and testing and is not directed to children. We do not knowingly process data from children.
+      </p>
+    </section>
+
+    <section>
+      <h2>International transfers</h2>
+      <p>
+        Depending on your location and infrastructure providers, data may be processed in regions outside your country. We implement measures designed to protect data during transfer and storage.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy to reflect technical or regulatory changes. The “Last updated” date at the top indicates the most recent revision. Material changes will be communicated by updating this page.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        If you have questions or requests regarding this Privacy Policy, please contact:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:parthdevlal11@gmail.com">parthdevlal11@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        This Privacy Policy applies only to the described development and testing app integrating Facebook and WhatsApp APIs and related webhooks/automation.
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
